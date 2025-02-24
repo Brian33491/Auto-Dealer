@@ -88,8 +88,11 @@ main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 2.5rem;
-        color: $secondaryColor;
+        color: black;
         font-weight: bold
+    }
+    h2{
+        padding: 1rem $gutter.5rem $gutter;
     }
     p {
         padding: .5rem $gutter;
@@ -208,8 +211,9 @@ main {
         border: 1px solid #ddd;
         padding: 20px;
         margin-bottom: 20px;
-        background-color: #f9f9f9;
+        background-color: #dadada;
         border-radius: 8px;
+        margin: 10px;
       }
       
       /* Style for customer name */

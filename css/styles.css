@@ -398,8 +398,11 @@ main {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 2.5rem;
-  color: #7c1d47;
+  color: black;
   font-weight: bold;
+}
+main h2 {
+  padding: 1rem 10px 0.5rem 10px;
 }
 main p {
   padding: 0.5rem 10px;
@@ -504,8 +507,9 @@ main .review-card {
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
+  background-color: #dadada;
   border-radius: 8px;
+  margin: 10px;
 }
 main .review-card h3 {
   font-size: 1.2em;
