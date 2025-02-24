@@ -391,8 +391,9 @@ header span {
 
 /* --------------------------- MAIN --------------------------- */
 main {
-  /* Smaller SVG size */
-  /* p tag inside cards */
+  /* Card hover effect */
+  /* Card image hover effect */
+  /* Bouncing SVG animation on hover */
 }
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
@@ -428,32 +429,76 @@ main .text_inside_image {
 }
 main .cards {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust columns based on screen size */
+  gap: 30px;
   margin: 20px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
 main .card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 main .card img {
-  width: 40px; /* Adjusted SVG size */
-  height: 40px;
+  width: 50px; /* Adjusted SVG size for clarity */
+  height: 50px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+main .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+main .card img {
+  width: 50px; /* Adjusted SVG size for clarity */
+  height: 50px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+main .card:hover img {
+  animation: bounce 0.6s ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+main .card h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
   margin-bottom: 15px;
+  color: #1d295f;
 }
 main .card-description {
-  font-size: 16px; /* Larger text */
-  color: #333;
+  font-size: 16px;
+  color: #555;
   margin-top: 10px;
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: center;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -477,7 +522,7 @@ footer a {
 }
 @media only screen and (min-width: 35rem) and (min-width: 600px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
   }
 }
 @media only screen and (min-width: 35rem) {
@@ -506,7 +551,7 @@ footer a {
 }
 @media only screen and (min-width: 64rem) and (min-width: 900px) {
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
   }
 }
 @media only screen and (min-width: 64rem) {
