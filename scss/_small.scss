@@ -97,7 +97,6 @@ main {
         line-height: $leading;
     }
     .heroImage {
-        border: red dashed 1px;
         position: relative;
         img{
             width: 100%;
@@ -114,13 +113,14 @@ main {
         width: 80%;
         left: 10%;
         text-align: center;
-        color: red;
+        color: rgb(0, 0, 0);
         font-size: 2rem;
+        font-weight: bold;
     }
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust columns based on screen size */
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
         gap: 30px;
         margin: 20px auto;
         max-width: 1200px;
@@ -140,33 +140,33 @@ main {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Card hover effect */
+    
     .card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
     .card img {
-        width: 50px; /* Adjusted SVG size for clarity */
+        width: 50px; 
         height: 50px;
         margin-bottom: 20px;
         transition: transform 0.3s ease;
     }
 
-    /* Card image hover effect */
+   
     .card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
     .card img {
-        width: 50px; /* Adjusted SVG size for clarity */
+        width: 50px; 
         height: 50px;
         margin-bottom: 20px;
         transition: transform 0.3s ease;
     }
 
-    /* Bouncing SVG animation on hover */
+    
     .card:hover img {
         animation: bounce 0.6s ease-in-out;
     }

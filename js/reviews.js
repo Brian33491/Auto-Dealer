@@ -21,34 +21,33 @@ const reviews = [
   }
 ];
 
-// Function to display reviews
+
 function displayReviews() {
-  const container = document.getElementById('customerCards'); // Target the div where reviews will go
+  const container = document.getElementById('customerCards'); 
 
   reviews.forEach(review => {
-    // Create a div for each review
+    
     const reviewDiv = document.createElement('div');
-    reviewDiv.classList.add('review-card'); // Give it a class for styling
+    reviewDiv.classList.add('review-card'); 
 
-    // Add the customer name
+   
     const name = document.createElement('h3');
     name.textContent = review.customer_name;
     reviewDiv.appendChild(name);
 
-    // Add the star rating
     const rating = document.createElement('p');
     rating.textContent = `Rating: ${'★'.repeat(review.star_rating)}${'☆'.repeat(5 - review.star_rating)}`;
     reviewDiv.appendChild(rating);
 
-    // Add the comment
+   
     const comment = document.createElement('p');
     comment.textContent = `"${review.comment}"`;
     reviewDiv.appendChild(comment);
 
-    // Append this review to the container
+  
     container.appendChild(reviewDiv);
   });
 }
 
-// Run the displayReviews function when the page is loaded
+
 document.addEventListener('DOMContentLoaded', displayReviews);
