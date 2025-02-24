@@ -394,6 +394,9 @@ main {
   /* Card hover effect */
   /* Card image hover effect */
   /* Bouncing SVG animation on hover */
+  /* Style for customer name */
+  /* Style for the rating */
+  /* Style for the comment */
 }
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
@@ -490,7 +493,7 @@ main .card:hover img {
 main .card h2 {
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #1d295f;
 }
 main .card-description {
@@ -499,6 +502,23 @@ main .card-description {
   margin-top: 10px;
   line-height: 1.6;
   text-align: center;
+}
+main .review-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+main .review-card h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+main .review-card p:first-child {
+  color: #f39c12;
+}
+main .review-card p:last-child {
+  font-style: italic;
 }
 
 /* --------------------------- FOOTER --------------------------- */

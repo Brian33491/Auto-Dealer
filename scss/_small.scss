@@ -192,7 +192,7 @@ main {
     .card h2 {
         font-size: 1.2rem;
         font-weight: 500;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         color: $primaryColor;
     }
 
@@ -203,6 +203,30 @@ main {
         line-height: 1.6;
         text-align: center;
     }
+
+    .review-card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+      
+      /* Style for customer name */
+      .review-card h3 {
+        font-size: 1.2em;
+        margin: 0 0 10px;
+      }
+      
+      /* Style for the rating */
+      .review-card p:first-child {
+        color: #f39c12;
+      }
+      
+      /* Style for the comment */
+      .review-card p:last-child {
+        font-style: italic;
+      }
 
    
 }// end main
