@@ -87,9 +87,9 @@ header {
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: $secondaryColor;
-        font-weight: $lightWeight
+        font-weight: bold
     }
     p {
         padding: .5rem $gutter;
@@ -128,7 +128,7 @@ main {
     }
 
     .card {
-        background-color: #fff;
+        background-color: #dadada;
         padding: 25px;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

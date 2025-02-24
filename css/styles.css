@@ -397,9 +397,9 @@ main {
 }
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #7c1d47;
-  font-weight: 300;
+  font-weight: bold;
 }
 main p {
   padding: 0.5rem 10px;
@@ -436,7 +436,7 @@ main .cards {
   padding: 0 20px;
 }
 main .card {
-  background-color: #fff;
+  background-color: #dadada;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
