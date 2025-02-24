@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Auto Dealer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    <meta charset="utf-8">
+    <title>Auto Dealer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
 
-<!-- Google Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
@@ -16,38 +16,66 @@
 
 <body>
 <div id="headerWrapper">
-	<header>
+    <header>
         <img src="images/logo1x.png" alt="logo" width="272" height="40" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
-		
-	</header>
+    </header>
 </div><!-- end header wrapper -->
 
-    
-    
 <div id="navWrapper">
     <nav id="theNav">
         <button id="theButton"></button>
         <ul>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Trucks</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
     </nav>
 </div> <!-- end nav wrapper -->
 
 <div id="mainWrapper">
     <main>
-     <div class="heroImage">
-        <img src="images/carHero.webp" width="1200" height="600" alt="hero">
-        <p>INSIDE THE CAR</p>
-     </div>   
-     <h1>Sup</h1>
-
+        <div class="heroImage">
+            <img src="images/carHero.webp" width="1200" height="600" alt="hero">
+            <p class="text_inside_image">INSIDE THE CAR</p>
+        </div>
+        <h1>Service</h1>
+        <div class="cards">
+            <section class="card">
+                <img src="images/car.svg" alt="about">
+                <p class="card-description">Cars are vehicles designed to transport people and goods, typically powered by internal combustion 
+                    engines or electric motors. They come in various types, such as sedans, SUVs, trucks, and sports cars, each offering different 
+                    features like performance, fuel efficiency, and safety. Over time, cars have evolved with advanced technologies, including 
+                    infotainment systems, autonomous driving, and electric powertrains. They are essential to modern life, providing personal mobility 
+                    and supporting commerce, while the growing shift to electric vehicles aims to reduce environmental impact.</p>
+            </section>
+            <section class="card">
+                <img src="images/warning.svg" alt="warning">
+                <p class="card-description">Car warnings notify drivers of potential issues, such as engine problems, low oil levels, or tire pressure.
+                     Other alerts include battery issues, brake system malfunctions, transmission problems, and engine overheating. There are also 
+                     warnings for the anti-lock braking system (ABS) and airbag system. It's crucial to address these warnings promptly to prevent 
+                     further damage, maintain vehicle safety, and ensure reliable performance.</p>
+            </section>
+            <section class="card">
+                <img src="images/gear.svg" alt="features">
+                <p class="card-description">Car features include safety elements like airbags, ABS, and traction control, 
+                    as well as infotainment systems with Bluetooth and navigation. Advanced driver-assistance systems (ADAS) offer features like 
+                    lane-keeping assist and adaptive cruise control. Comfort features include heated seats, climate control, and keyless entry. Many 
+                    cars also have energy-efficient options like electric or hybrid engines to reduce fuel consumption and emissions.</p>
+            </section>
+            <section class="card">
+                <img src="images/phone.svg" alt="phone">
+                <p class="card-description">If you need help with your car, start by checking the owner's manual for troubleshooting tips related to
+                     any warning lights or issues. For common problems like flat tires or engine overheating, you may be able to resolve them with 
+                     basic knowledge or roadside assistance. If the issue is more complex, contacting a mechanic or visiting a repair shop is 
+                     recommended. Many automakers also offer customer service or roadside assistance programs to help in emergencies. If you're unsure,
+                      it's always safer to consult a professional rather than risk further damage.</p>
+            </section>
+        </div>
     </main>
 </div><!-- end main wrapper -->
-    
+
 <div id="footerWrapper">
     <footer>
         <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
@@ -56,4 +84,4 @@
 </div> <!-- end footer wrapper -->
 <script src="js/scripts.js"></script>
 </body>
-</html> 
+</html>

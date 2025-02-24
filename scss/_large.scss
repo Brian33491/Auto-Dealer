@@ -1,3 +1,9 @@
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 header, nav, main {
     max-width: 960px;
     margin: auto;
