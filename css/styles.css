@@ -474,6 +474,13 @@ footer a {
 
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
+}
+@media only screen and (min-width: 35rem) and (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 35rem) {
   #theButton {
     display: none;
   }
